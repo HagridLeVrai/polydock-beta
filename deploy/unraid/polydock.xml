@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- Unraid template for Polydock. Installing it: docs/install.md#unraid -->
+<Container version="2">
+  <Name>Polydock</Name>
+  <Repository>ghcr.io/hagridlevrai/polydock:beta</Repository>
+  <Registry>https://github.com/HagridLeVrai/Polydock/pkgs/container/polydock</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/HagridLeVrai/polydock-beta/issues</Support>
+  <Project>https://github.com/HagridLeVrai/polydock-beta</Project>
+  <Overview>Self-hosted 3D print library: scans your STL, 3MF, OBJ and STEP files in place, shows them in 3D, paints them for multi-material printing and opens them in Bambu Studio, OrcaSlicer or PrusaSlicer.</Overview>
+  <Category>MediaServer:Other Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/HagridLeVrai/polydock-beta/main/assets/polydock.svg</Icon>
+  <ExtraParams>--user 99:100</ExtraParams>
+  <Config Name="Web interface" Target="3000" Default="3000" Mode="tcp" Description="Port of the web interface" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Models" Target="/library" Default="/mnt/user/3d-models" Mode="ro" Description="Your model files. Read-only by default: Polydock never changes them. Set to rw to get a real trash." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/3d-models</Config>
+  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/polydock" Mode="rw" Description="Database, thumbnails and imported files. Back this up." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/polydock</Config>
+  <Config Name="Libraries" Target="POLYDOCK_LIBRARIES" Default="/library" Mode="" Description="Folders to scan inside the container, separated by ':' (Name=/library/path to name them), or s3://bucket/prefix" Type="Variable" Display="advanced" Required="false" Mask="false">/library</Config>
+  <Config Name="S3 endpoint" Target="POLYDOCK_S3_ENDPOINT" Default="" Mode="" Description="Only for a library in S3-compatible storage" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="S3 region" Target="POLYDOCK_S3_REGION" Default="" Mode="" Description="Only for a library in S3-compatible storage" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="S3 access key" Target="POLYDOCK_S3_ACCESS_KEY_ID" Default="" Mode="" Description="Only for a library in S3-compatible storage" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="S3 secret key" Target="POLYDOCK_S3_SECRET_ACCESS_KEY" Default="" Mode="" Description="Only for a library in S3-compatible storage" Type="Variable" Display="advanced" Required="false" Mask="true"/>
+</Container>

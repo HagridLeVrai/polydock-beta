@@ -1,0 +1,38 @@
+# Polydock with Docker Compose. Full guide: docs/install.md
+#
+#   1. Put this file in a folder of its own, for example ~/polydock.
+#   2. Change the path of your models below (the left side of "…:/library:ro").
+#   3. Run `docker compose up -d`, then open http://<this machine>:3000.
+#
+# Update later with `docker compose pull && docker compose up -d`.
+
+services:
+  polydock:
+    image: ghcr.io/hagridlevrai/polydock:beta
+    container_name: polydock
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    # Run as the owner of the data folder when it is a folder on the host (NAS): `id` gives
+    # your UID and GID. Not needed with the named volume below.
+    # user: "1000:1000"
+    environment:
+      # Several folders: mount each one and list them, separated by ":", optionally named:
+      # POLYDOCK_LIBRARIES: "Figurines=/library/figurines:Terrain=/library/terrain"
+      POLYDOCK_LIBRARIES: /library
+      TZ: Europe/Paris
+      # Optional: a library kept in S3-compatible storage (AWS, Backblaze B2, R2, MinIO…).
+      # Add it to POLYDOCK_LIBRARIES as Name=s3://bucket/prefix and give the key:
+      # POLYDOCK_S3_ENDPOINT: https://s3.eu-central-003.backblazeb2.com
+      # POLYDOCK_S3_REGION: eu-central-003
+      # POLYDOCK_S3_ACCESS_KEY_ID: ...
+      # POLYDOCK_S3_SECRET_ACCESS_KEY: ...
+    volumes:
+      # Your models. ":ro" (read-only) is safest: Polydock then never changes them, and
+      # deleting from Polydock only hides files. Drop ":ro" to get a real trash.
+      - /path/to/your/models:/library:ro
+      # Polydock's own data: database, thumbnails, imported files. Back this up.
+      - polydock-data:/data
+
+volumes:
+  polydock-data:
