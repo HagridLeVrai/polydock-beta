@@ -187,7 +187,7 @@ docker compose up -d
 
 La base se met à jour toute seule au démarrage. Tes fichiers, tags, collections et schémas de
 couleurs restent. Pour rester sur une version précise plutôt que la dernière, utilise un tag
-comme `ghcr.io/hagridlevrai/polydock:0.1.0` à la place de `latest`.
+comme `ghcr.io/hagridlevrai/polydock:0.1.0-beta.1` à la place de `beta`.
 
 ## Sauvegarder
 

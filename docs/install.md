@@ -180,8 +180,8 @@ docker compose up -d
 ```
 
 The database upgrades itself at start. Your files, tags, collections and colour schemes stay.
-To stay on a given version rather than the latest, use a tag such as
-`ghcr.io/hagridlevrai/polydock:0.1.0` in place of `latest`.
+To stay on a given version rather than the newest, use a tag such as
+`ghcr.io/hagridlevrai/polydock:0.1.0-beta.1` in place of `beta`.
 
 ## Backing up
 
