@@ -54,7 +54,7 @@ please give the version (**Settings > About**), your machine and browser, what y
 the logs (`docker logs polydock`). French or English, both are fine.
 
 After a week of use, and again at the end, please fill in the
-[feedback form](https://tally.so/r/0VOEoN): ten questions, five minutes.
+[feedback form](https://tally.so/r/0VOEoN), about five minutes.
 
 ## Known limitations
 

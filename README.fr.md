@@ -56,7 +56,7 @@ bug, donne la version (**Paramètres > À propos**), ta machine et ton navigateu
 fait, et les journaux (`docker logs polydock`). En français ou en anglais.
 
 Après une semaine d'utilisation, puis à la fin, remplis le
-[questionnaire de retour](https://tally.so/r/0VOEoN) : dix questions, cinq minutes.
+[questionnaire de retour](https://tally.so/r/0VOEoN), environ cinq minutes.
 
 ## Limites connues
 
