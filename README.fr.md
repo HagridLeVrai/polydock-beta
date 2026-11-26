@@ -55,6 +55,9 @@ nouvelles versions bêta sous le même tag `:beta`.
 bug, donne la version (**Paramètres > À propos**), ta machine et ton navigateur, ce que tu as
 fait, et les journaux (`docker logs polydock`). En français ou en anglais.
 
+Après une semaine d'utilisation, puis à la fin, remplis le
+[questionnaire de retour](https://tally.so/r/0VOEoN) : dix questions, cinq minutes.
+
 ## Limites connues
 
 - **Couleurs dans le slicer** : OrcaSlicer (2.5 et plus) reçoit les couleurs des filaments.

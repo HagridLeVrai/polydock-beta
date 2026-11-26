@@ -53,6 +53,9 @@ under the same `:beta` tag.
 please give the version (**Settings > About**), your machine and browser, what you did, and
 the logs (`docker logs polydock`). French or English, both are fine.
 
+After a week of use, and again at the end, please fill in the
+[feedback form](https://tally.so/r/0VOEoN): ten questions, five minutes.
+
 ## Known limitations
 
 - **Colours in the slicer:** OrcaSlicer (2.5 or later) receives the filament colours. Bambu
