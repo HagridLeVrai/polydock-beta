@@ -17,7 +17,12 @@ what breaks. Thank you for trying it.
 
 ## Install
 
-One Docker container, for amd64 and arm64:
+**Without Docker:** the desktop app installs like any other program on Windows, macOS and
+Linux. Download it from the [releases](https://github.com/HagridLeVrai/polydock-beta/releases)
+and follow the [desktop app guide](docs/install-desktop.md): the installers are not signed
+yet, and the guide shows how to open them.
+
+**With Docker**, on a NAS or a server: one container, for amd64 and arm64:
 
 ```sh
 docker run -d --name polydock -p 3000:3000 \
@@ -51,7 +56,8 @@ under the same `:beta` tag.
 
 [Open an issue](https://github.com/HagridLeVrai/polydock-beta/issues/new/choose). For a bug,
 please give the version (**Settings > About**), your machine and browser, what you did, and
-the logs (`docker logs polydock`). French or English, both are fine.
+the logs (`docker logs polydock`, or **File > Show the log** in the desktop app). French or
+English, both are fine.
 
 After a week of use, and again at the end, please fill in the
 [feedback form](https://tally.so/r/0VOEoN), about five minutes.

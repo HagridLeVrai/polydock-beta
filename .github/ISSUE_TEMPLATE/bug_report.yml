@@ -18,7 +18,7 @@ body:
     id: machine
     attributes:
       label: Machine
-      description: Where Polydock runs, e.g. Synology DS920+, Unraid, Raspberry Pi 5, Docker Desktop on Windows. / Où tourne Polydock.
+      description: Where Polydock runs, e.g. Synology DS920+, Unraid, Raspberry Pi 5, Docker Desktop on Windows, desktop app on macOS 15. / Où tourne Polydock.
     validations:
       required: true
   - type: input
@@ -37,7 +37,7 @@ body:
     id: logs
     attributes:
       label: Logs / Journaux
-      description: The output of `docker logs polydock` around the problem. / La sortie de `docker logs polydock`.
+      description: The output of `docker logs polydock` around the problem, or the desktop app's File > Show the log. / La sortie de `docker logs polydock`, ou Fichier > Afficher le journal dans l'application de bureau.
       render: text
   - type: markdown
     attributes:
