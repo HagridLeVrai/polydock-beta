@@ -18,7 +18,13 @@ coince. Merci de l'essayer.
 
 ## Installer
 
-Un seul conteneur Docker, pour amd64 et arm64 :
+**Sans Docker :** l'application de bureau s'installe comme un logiciel ordinaire sur Windows,
+macOS et Linux. Télécharge-la dans les
+[releases](https://github.com/HagridLeVrai/polydock-beta/releases) et suis le
+[guide de l'application](docs/install-desktop.fr.md) : les installateurs ne sont pas encore
+signés, et le guide explique comment les ouvrir.
+
+**Avec Docker**, sur un NAS ou un serveur : un seul conteneur, pour amd64 et arm64 :
 
 ```sh
 docker run -d --name polydock -p 3000:3000 \
@@ -53,7 +59,8 @@ nouvelles versions bêta sous le même tag `:beta`.
 
 [Ouvre une issue](https://github.com/HagridLeVrai/polydock-beta/issues/new/choose). Pour un
 bug, donne la version (**Paramètres > À propos**), ta machine et ton navigateur, ce que tu as
-fait, et les journaux (`docker logs polydock`). En français ou en anglais.
+fait, et les journaux (`docker logs polydock`, ou **Fichier > Afficher le journal** dans
+l'application de bureau). En français ou en anglais.
 
 Après une semaine d'utilisation, puis à la fin, remplis le
 [questionnaire de retour](https://tally.so/r/0VOEoN), environ cinq minutes.
