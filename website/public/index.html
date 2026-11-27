@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polydock · Your 3D library, in colour</title>
+<meta name="description" content="Polydock turns your STL, 3MF, OBJ and STEP files into a library, lets you paint them for multi-colour printing and sends them to OrcaSlicer, Bambu Studio or PrusaSlicer. Free, on your own machine.">
+<link rel="canonical" href="https://polydock3d.com/">
+<link rel="alternate" hreflang="fr" href="https://polydock3d.com/fr/">
+<link rel="alternate" hreflang="en" href="https://polydock3d.com/">
+<link rel="alternate" hreflang="x-default" href="https://polydock3d.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Polydock">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://polydock3d.com/">
+<meta property="og:title" content="Polydock · Your 3D library, in colour">
+<meta property="og:description" content="Organise your 3D models, paint them for multi-colour printing, send them to your slicer. Free, on your own machine.">
+<meta property="og:image" content="https://polydock3d.com/img/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f4f2ed" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151412" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t;if(!localStorage.getItem("lang")&&/^fr\b/i.test(navigator.language||""))location.replace("/fr/"+location.hash)}catch(e){}</script>
+<link rel="stylesheet" href="/tokens.css">
+<link rel="stylesheet" href="/site.css">
+<script src="/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenu">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Polydock, home">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path class="lm-dark" d="M16 16L4.14 22.85Q3.44 21.65 3.44 20.05L3.44 11.95Q3.44 8.75 6.21 7.15L13.23 3.1Q14.61 2.3 16 2.3Z"/><path class="lm-light" d="M16 16L16 2.3Q17.39 2.3 18.77 3.1L25.79 7.15Q28.56 8.75 28.56 11.95L28.56 20.05Q28.56 21.65 27.86 22.85Z"/><path class="lm-mid" d="M16 16L27.86 22.85Q27.17 24.05 25.79 24.85L18.77 28.9Q16 30.5 13.23 28.9L6.21 24.85Q4.83 24.05 4.14 22.85Z"/></svg>
+      <span class="wordmark">Polydock</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#features">Features</a>
+      <a href="#install">Install</a>
+      <a href="#hosted">Hosted</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="top-actions">
+      <a class="btn btn-ghost btn-sm lang" href="/fr/" hreflang="fr" lang="fr" data-lang="fr" title="Version française">FR</a>
+      <button class="btn btn-ghost btn-icon theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+        <span class="i i-sun"></span><span class="i i-moon"></span>
+      </button>
+      <a class="btn btn-primary btn-sm top-cta" href="#install" aria-label="Download"><span class="i i-download"></span><span>Download</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="badge"><span class="fils"><span class="fil" style="background:#F4F1EA"></span><span class="fil" style="background:#E8772E"></span><span class="fil" style="background:#2F6FDE"></span></span>Free public beta</span>
+        <h1 class="display">Your 3D library, <span class="rainbow">in colour.</span></h1>
+        <p class="lead">Polydock organises your STL, 3MF, OBJ and STEP files right where they already are, lets you paint them for multi-colour printing, and sends them to your slicer in one click.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#install" data-download-cta data-label-win="Download for Windows" data-label-mac="Download for macOS" data-label-linux="Download for Linux"><span class="i i-download"></span><span>Download the app</span></a>
+          <a class="btn btn-secondary" href="#hosted" data-hosted><span class="i i-globe"></span>Hosted service <span class="soon">Soon</span></a>
+        </div>
+        <p class="hero-meta">
+          <span>Windows, macOS and Linux</span><span class="dot"></span><span>Docker for NAS and servers</span><span class="dot"></span><span>Version <span class="mono" data-version>0.1.0-beta.2</span></span>
+        </p>
+      </div>
+      <div class="hero-shot">
+        <div class="window">
+          <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span class="url">localhost:47300</span></div>
+          <div class="shot">
+            <img class="shot-light" src="/img/workshop-light.webp" width="1600" height="1000" alt="The Polydock paint workshop: a hexagonal vase painted in white, orange and blue bands, with the filament list on the right." fetchpriority="high">
+            <img class="shot-dark" src="/img/workshop-dark.webp" width="1600" height="1000" alt="The Polydock paint workshop in dark theme: a hexagonal vase painted in white, orange and blue bands." loading="lazy">
+          </div>
+        </div>
+        <div class="spool spool-a" aria-hidden="true"><span class="sw" style="background:#E8772E"></span><b>F2</b>#E8772E</div>
+        <div class="spool spool-b" aria-hidden="true"><span class="sw" style="background:#2F6FDE"></span><b>F3</b>#2F6FDE</div>
+        <div class="spool spool-c" aria-hidden="true"><span class="sw" style="background:#F4F1EA"></span><b>F1</b>#F4F1EA</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip" aria-label="Formats and slicers">
+    <div class="wrap">
+      <div class="strip-group"><span class="overline">Formats</span><span class="chip chip-mono">STL</span><span class="chip chip-mono">3MF</span><span class="chip chip-mono">OBJ</span><span class="chip chip-mono">STEP</span></div>
+      <div class="strip-group"><span class="overline">Slicers</span><span class="chip">OrcaSlicer</span><span class="chip">Bambu Studio</span><span class="chip">PrusaSlicer</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="overline">From folder to printer</span>
+        <h2 class="h2">Four steps, one app</h2>
+        <p class="lead">Polydock does not replace your slicer. It handles everything that comes before: finding the right model and getting its colours ready.</p>
+      </div>
+      <ol class="steps">
+        <li class="step"><span class="step-icon"><span class="i i-collection"></span></span><h3 class="h3">Organise</h3><p>Point it at your folder, NAS share or S3 bucket. Polydock groups the files into models without moving anything.</p></li>
+        <li class="step"><span class="step-icon"><span class="i i-search"></span></span><h3 class="h3">Find</h3><p>Thumbnails, search, tags and collections. Every model opens in a 3D viewer.</p></li>
+        <li class="step"><span class="step-icon"><span class="i i-brush"></span></span><h3 class="h3">Paint</h3><p>Paint the model with your own filaments and keep several colour schemes for the same file.</p></li>
+        <li class="step"><span class="step-icon"><span class="i i-external"></span></span><h3 class="h3">Send</h3><p>One click and the model opens in OrcaSlicer, Bambu Studio or PrusaSlicer, paint included.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="f-bib">
+    <div class="wrap">
+      <div class="feature">
+        <div class="feature-text">
+          <span class="overline">Library</span>
+          <h2 class="h2" id="f-bib">Thousands of files, finally in order</h2>
+          <p class="lead">Polydock reads your collection where it lives, groups it into models and keeps a thumbnail of each. Search by name, author, tag or file.</p>
+          <ul class="ticks">
+            <li><span class="i i-check"></span><span><strong>Nothing is moved or changed.</strong> Your folders stay as they are.</span></li>
+            <li><span class="i i-check"></span><span><strong>Collections and tags</strong>, with drag and drop.</span></li>
+            <li><span class="i i-check"></span><span><strong>Import ZIPs</strong> from Printables or MakerWorld as a single model.</span></li>
+          </ul>
+        </div>
+        <div class="window">
+          <div class="shot">
+            <img class="shot-light" src="/img/library-light.webp" width="1600" height="1000" alt="The library: a grid of painted models, with collections on the left." loading="lazy">
+            <img class="shot-dark" src="/img/library-dark.webp" width="1600" height="1000" alt="The library in dark theme." loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature flip">
+        <div class="feature-text">
+          <span class="overline">Model page</span>
+          <h2 class="h2">Every model, in 3D and in detail</h2>
+          <p class="lead">A viewer to turn the model around, its files sorted into variants (main, pre-supported…), its tags and its collections.</p>
+          <ul class="ticks">
+            <li><span class="i i-check"></span><span><strong>Variants</strong>: drag a file from one to another.</span></li>
+            <li><span class="i i-check"></span><span><strong>Technical details</strong>: size, triangles, filaments used.</span></li>
+            <li><span class="i i-check"></span><span><strong>Merge</strong> two models that belong together, or split one apart.</span></li>
+          </ul>
+        </div>
+        <div class="window">
+          <div class="shot">
+            <img class="shot-light" src="/img/model-light.webp" width="1600" height="1000" alt="The page of a painted vase: 3D viewer on the left, tags, collections and files on the right." loading="lazy">
+            <img class="shot-dark" src="/img/model-dark.webp" width="1600" height="1000" alt="The page of a painted vase in dark theme." loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-text">
+          <span class="overline">Send to slicer</span>
+          <h2 class="h2">From paint to print, no exporting</h2>
+          <p class="lead">Polydock builds a painted 3MF and opens it straight in your slicer. Your scheme stays saved, so you can send it again three weeks later, exactly the same.</p>
+          <ul class="ticks">
+            <li><span class="i i-check"></span><span><strong>OrcaSlicer</strong> also gets your filament colours.</span></li>
+            <li><span class="i i-check"></span><span><strong>For AMS, MMU and tool changers</strong>, on any printer your slicer supports.</span></li>
+            <li><span class="i i-check"></span><span><strong>The original file</strong> is never changed.</span></li>
+          </ul>
+        </div>
+        <div class="window">
+          <div class="shot">
+            <img class="shot-light" src="/img/send-light.webp" width="1600" height="1000" alt="The send to slicer window, with OrcaSlicer, Bambu Studio and PrusaSlicer." loading="lazy">
+            <img class="shot-dark" src="/img/send-dark.webp" width="1600" height="1000" alt="The send to slicer window in dark theme." loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="t-toi">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="overline">On your machine</span>
+        <h2 class="h2" id="t-toi">Your files stay yours</h2>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><span class="i i-lock"></span><h3 class="h3">Runs at home</h3><p>Polydock runs on your computer, your NAS or your server. Your models go nowhere.</p></div>
+        <div class="pillar"><span class="i i-eye"></span><h3 class="h3">Read-only</h3><p>It reads your folders without touching them. Paint and tags are stored separately.</p></div>
+        <div class="pillar"><span class="i i-cube"></span><h3 class="h3">Open formats</h3><p>What you paint comes out as a standard 3MF, which your slicer opens like any other file.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="install" aria-labelledby="t-installer">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="overline">Version <span class="mono" data-version>0.1.0-beta.2</span></span>
+        <h2 class="h2" id="t-installer">Install Polydock</h2>
+        <p class="lead">The desktop app installs like any other program and opens in its own window. Pick your system.</p>
+      </div>
+      <div class="downloads">
+        <div class="dl" data-os="win">
+          <span class="yours">Your system</span>
+          <h3 class="h3">Windows</h3>
+          <span class="faint">10 and 11, 64-bit</span>
+          <span class="file" data-file="win">.exe installer</span>
+          <a class="btn btn-primary" data-asset="win" href="https://github.com/HagridLeVrai/polydock-beta/releases/download/v0.1.0-beta.2/Polydock-0.1.0-beta.2-win-x64.exe"><span class="i i-download"></span>Download</a>
+        </div>
+        <div class="dl" data-os="mac-arm">
+          <span class="yours">Your system</span>
+          <h3 class="h3">macOS</h3>
+          <span class="faint">Apple Silicon (M1 and later)</span>
+          <span class="file" data-file="mac-arm">.dmg disk image</span>
+          <a class="btn btn-primary" data-asset="mac-arm" href="https://github.com/HagridLeVrai/polydock-beta/releases/download/v0.1.0-beta.2/Polydock-0.1.0-beta.2-mac-arm64.dmg"><span class="i i-download"></span>Download</a>
+        </div>
+        <div class="dl" data-os="mac-x64">
+          <span class="yours">Your system</span>
+          <h3 class="h3">macOS</h3>
+          <span class="faint">Intel processor</span>
+          <span class="file" data-file="mac-x64">.dmg disk image</span>
+          <a class="btn btn-primary" data-asset="mac-x64" href="https://github.com/HagridLeVrai/polydock-beta/releases/download/v0.1.0-beta.2/Polydock-0.1.0-beta.2-mac-x64.dmg"><span class="i i-download"></span>Download</a>
+        </div>
+        <div class="dl" data-os="linux">
+          <span class="yours">Your system</span>
+          <h3 class="h3">Linux</h3>
+          <span class="faint">x86-64</span>
+          <span class="file" data-file="linux">AppImage</span>
+          <a class="btn btn-primary" data-asset="linux" href="https://github.com/HagridLeVrai/polydock-beta/releases/download/v0.1.0-beta.2/Polydock-0.1.0-beta.2-linux-x86_64.AppImage"><span class="i i-download"></span>Download</a>
+          <a class="alt" data-asset="deb" href="https://github.com/HagridLeVrai/polydock-beta/releases/download/v0.1.0-beta.2/Polydock-0.1.0-beta.2-linux-amd64.deb">or the .deb package</a>
+        </div>
+      </div>
+      <p class="dl-note"><span class="i i-info"></span><span>The installers are not signed yet, so Windows and macOS show a warning the first time. The <a href="https://github.com/HagridLeVrai/polydock-beta/blob/main/docs/install-desktop.md">install guide</a> shows how to get past it in two clicks.</span></p>
+
+      <div class="docker">
+        <div class="docker-text">
+          <h3 class="h3">On a NAS or a server</h3>
+          <p>One Docker image, for amd64 and arm64. Then open <code>http://&lt;address&gt;:3000</code> from any browser at home.</p>
+          <p><a href="https://github.com/HagridLeVrai/polydock-beta/blob/main/docs/install.md">Docker Compose, Synology and Unraid guide</a></p>
+        </div>
+        <pre class="code" id="docker-cmd"><button class="copy" type="button" data-copy="#docker-cmd code" data-copied="Copied">Copy</button><code>docker run -d --name polydock -p 3000:3000 \
+  -v /path/to/your/models:/library:ro \
+  -v polydock-data:/data \
+  ghcr.io/hagridlevrai/polydock:beta</code></pre>
+      </div>
+      <p class="all-versions">Every version and its release notes are on <a data-release-link href="https://github.com/HagridLeVrai/polydock-beta/releases">GitHub</a>.</p>
+    </div>
+  </section>
+
+  <section class="section" id="hosted" aria-label="Hosted service and beta">
+    <div class="wrap">
+      <div class="duo">
+        <div class="panel panel-hosted">
+          <span class="overline">Hosted service</span>
+          <h2 class="h2">Rather not install anything?</h2>
+          <p>A hosted version of Polydock is on its way: your library online, reachable from any browser, with no server to look after.</p>
+          <div class="actions">
+            <a class="btn btn-secondary" href="#hosted" data-hosted aria-disabled="true"><span class="i i-globe"></span>Open the hosted service <span class="soon">Soon</span></a>
+          </div>
+        </div>
+        <div class="panel">
+          <span class="overline">Beta</span>
+          <h2 class="h2">Help us shape it</h2>
+          <p>Polydock is in beta. A bug, an idea, a file that looks wrong? Tell us, in English or French: every report helps.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://github.com/HagridLeVrai/polydock-beta/issues/new/choose"><span class="i i-alert"></span>Report a problem</a>
+            <a class="btn btn-secondary" href="https://tally.so/r/0VOEoN">Give feedback</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="faq" aria-labelledby="t-faq">
+    <div class="wrap">
+      <div class="section-head center"><h2 class="h2" id="t-faq">Questions</h2></div>
+      <div class="faq">
+        <details>
+          <summary>Is Polydock free?<span class="i i-chevron-right"></span></summary>
+          <p>Yes. The version you install yourself, desktop app or Docker, is free. Only the upcoming hosted service may be paid, to cover storage and servers.</p>
+        </details>
+        <details>
+          <summary>Is it a slicer?<span class="i i-chevron-right"></span></summary>
+          <p>No. Polydock organises and prepares your models, then hands them to your usual slicer (OrcaSlicer, Bambu Studio or PrusaSlicer), which makes the G-code. Polydock does not talk to your printer.</p>
+        </details>
+        <details>
+          <summary>Does it change my files?<span class="i i-chevron-right"></span></summary>
+          <p>Never. Polydock reads your folders as they are. Paint, tags and collections are stored separately. With Docker you can even mount your folder read-only.</p>
+        </details>
+        <details>
+          <summary>Which printers does it work with?<span class="i i-chevron-right"></span></summary>
+          <p>Any printer your slicer supports. For multi-colour you need a multi-material setup: Bambu Lab AMS, Prusa MMU, a tool changer or a multi-head printer.</p>
+        </details>
+        <details>
+          <summary>Why do Windows or macOS show a warning?<span class="i i-chevron-right"></span></summary>
+          <p>The beta installers are not digitally signed yet. They do come from us: the <a href="https://github.com/HagridLeVrai/polydock-beta/blob/main/docs/install-desktop.md">install guide</a> shows how to open them.</p>
+        </details>
+        <details>
+          <summary>Where is the source code?<span class="i i-chevron-right"></span></summary>
+          <p>Polydock will be free software under the AGPL-3.0. The source code will be published with the public release; during the beta, only the installers and the Docker image are shipped.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Polydock, home">
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path class="lm-dark" d="M16 16L4.14 22.85Q3.44 21.65 3.44 20.05L3.44 11.95Q3.44 8.75 6.21 7.15L13.23 3.1Q14.61 2.3 16 2.3Z"/><path class="lm-light" d="M16 16L16 2.3Q17.39 2.3 18.77 3.1L25.79 7.15Q28.56 8.75 28.56 11.95L28.56 20.05Q28.56 21.65 27.86 22.85Z"/><path class="lm-mid" d="M16 16L27.86 22.85Q27.17 24.05 25.79 24.85L18.77 28.9Q16 30.5 13.23 28.9L6.21 24.85Q4.83 24.05 4.14 22.85Z"/></svg>
+      <span class="wordmark">Polydock</span>
+    </a>
+    <nav class="foot-links" aria-label="Links">
+      <a href="https://github.com/HagridLeVrai/polydock-beta">GitHub</a>
+      <a href="https://github.com/HagridLeVrai/polydock-beta/releases">Releases</a>
+      <a href="https://github.com/HagridLeVrai/polydock-beta/blob/main/docs/install.md">Documentation</a>
+      <a href="https://github.com/HagridLeVrai/polydock-beta/issues">Report a problem</a>
+      <a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
