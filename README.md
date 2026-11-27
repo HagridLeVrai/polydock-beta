@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/polydock.svg" width="72" alt=""></p>
+<p align="center"><img src="assets/screenshots/cover.png" alt="Polydock"></p>
 
 # Polydock beta
 
@@ -14,6 +14,19 @@ per file, and open it in OrcaSlicer, Bambu Studio or PrusaSlicer in one click.
 
 This repository is where the **beta** happens: the install guides, and the place to report
 what breaks. Thank you for trying it.
+
+## Screenshots
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/screenshots/library-dark.png">
+    <img src="assets/screenshots/library.png" alt="The library">
+  </picture>
+</p>
+
+| The paint workshop | Sending to a slicer |
+| --- | --- |
+| <img src="assets/screenshots/workshop.png" alt="The paint workshop"> | <img src="assets/screenshots/send-to-slicer.png" alt="Sending to a slicer"> |
 
 ## Install
 

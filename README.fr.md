@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/polydock.svg" width="72" alt=""></p>
+<p align="center"><img src="assets/screenshots/cover.png" alt="Polydock"></p>
 
 # Bêta de Polydock
 
@@ -15,6 +15,19 @@ un clic.
 
 Ce dépôt accueille la **bêta** : les guides d'installation, et l'endroit où signaler ce qui
 coince. Merci de l'essayer.
+
+## Captures
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/screenshots/library-dark.png">
+    <img src="assets/screenshots/library.png" alt="La bibliothèque">
+  </picture>
+</p>
+
+| L'atelier de peinture | Envoi au slicer |
+| --- | --- |
+| <img src="assets/screenshots/workshop.png" alt="L'atelier de peinture"> | <img src="assets/screenshots/send-to-slicer.png" alt="Envoi au slicer"> |
 
 ## Installer
 
